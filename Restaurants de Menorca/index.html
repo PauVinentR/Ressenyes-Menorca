@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ressenyes dels restaurants de Menorca</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./images/logos.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <header class="header" data-header>
+    <div class="container">
+      <div class="overlay" data-overlay></div>
+      <a href="#" class="logo">
+        <img src="./images/logos.png" width="60px" alt="Logo de la pàgina">
+      </a>
+      <div>
+      <div class="title-header">Ressenyes Menorca</div>
+      <div class="subtitle-header">Tot restaurant menorquí, valorat estarà aquí</div>
+      </div>
+      <div class="header-actions">
+        <a href="#opinions" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="restaurant-outline"></ion-icon>
+          <span id="aria-label-txt">Explora la gastronomia</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <section class="section-hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h2 class="h1 hero-title">La gastrononmia menorquina</h2>
+        <p class="hero-text">
+          Introdueix les teves opinions sobre els restaurants de Menorca!
+        </p>
+      </div>
+      <div><img class="hero-banner" src="./images/place.jpg" alt=""></div>
+      <div class="input-wrapper">
+        <label for="input-1" class="input-label">Establiment</label>
+        <input type="text" class="input-field" id="establiment"
+          placeholder="Indica el restaurant/bar al que has acudit.">
+      </div>
+      <div class="input-wrapper">
+        <label for="input-2" class="input-label">Puntuació</label>
+        <input type="text" class="input-field" id="puntuacio" placeholder="Puntua l'establiment d'1 a 5.">
+      </div>
+      <div class="input-wrapper">
+        <label for="input-3" class="input-label">Valoració</label>
+        <input type="text" name="year" class="input-field" id="valoracio"
+          placeholder="Insereig la teva valoració de l'establiment">
+      </div>
+      <button class="btn" id="button">Afegeix la teva ressenya</button>
+    </div>
+  </section>
+
+  <div class="restaurant-valoration-container" id="opinions">
+    <div class="title-opinions">Observa totes les ressenyes que s'han dut a terme</div>
+    <div id="hola" class=" restaurant-valoration services">
+      <ul id="list">
+        <ul id="establiment"></ul>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <ul class="social-list">
+      <li>
+        <a class="social-link"
+          href="https://www.elmundo.es/metropoli/gastronomia/2018/07/12/5b4714b4268e3e6d4b8b45de.html" target="_blank">
+          Els millors restuarants de Menorca
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.instagram.com/" target="_blank" class="social-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://twitter.com/x" target="_blank" class="social-link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </li>
+
+      <li>
+        <a href="http://mail.gogle.com" target="_blank" class="social-link">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+  </div>
+  </footer>
+  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
